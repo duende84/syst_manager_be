@@ -38,6 +38,18 @@ gem 'devise'
 #Models, Routes and Specs Documentation
 gem 'annotate'
 
+# API authentication
+gem 'doorkeeper'
+gem 'rack-oauth2'
+
+# API
+group :api do
+  gem 'grape'
+  gem 'grape-entity'
+  gem 'rack-cors', :require => 'rack/cors'
+  gem 'rest-client' # Test API
+end
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
