@@ -32,6 +32,9 @@ gem 'jbuilder', '~> 2.5'
 #Manage the application.yml file
 gem 'figaro'
 
+#User Authentication
+gem 'devise'
+
 #Models, Routes and Specs Documentation
 gem 'annotate'
 
