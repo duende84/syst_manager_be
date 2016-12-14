@@ -1,2 +1,26 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<!-- Header -->
+  <div class="intro-header">
+    <div class="container">
+      <div class="row" style="padding-top: 5%; overflow: scroll;">
+        <% @servers.each do |server| %>
+          <div class="col-md-4">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title"><%= server[:name] %></h3>
+                <h3 class="panel-title">UUID:  <%= server[:uid] %></h3>
+              </div>
+              <div class="panel-body">
+                <p class="blacky"><span class="glyphicon glyphicon-scale"></span> CPU usage: <%= server[:cpu_used] %></p>
+                <p class="blacky"><span class="glyphicon glyphicon-hdd"></span> Disk usage: <%= server[:disk_used_percent] %></p>
+                <p class="blacky"><span class="glyphicon glyphicon-tasks"></span> CPU processes: <%= server[:cpu_processes] %></p>
+                <a href="/"><span class="glyphicon glyphicon-refresh"></span> Refresh </a>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+    <!-- /.container -->
+
+  </div>
+  <!-- /.intro-header -->
