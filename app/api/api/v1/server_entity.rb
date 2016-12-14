@@ -6,6 +6,7 @@ module API
       expose :id
       expose :uid
       expose :name
+      expose :user_id
       expose :so
       expose :ip
       expose :disk_used

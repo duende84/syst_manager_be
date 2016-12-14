@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
 
-  root 'home#index'
-
   mount API::Base, at: "/api"
 
   use_doorkeeper
