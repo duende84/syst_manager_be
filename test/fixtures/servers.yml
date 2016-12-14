@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  uid: MyString
+  name: MyString
+  so: MyString
+  ip: MyString
+  disk_used: 9.99
+  disk_used_percent: 9.99
+  memory_used: 9.99
+  memory_used_percent: 9.99
+  cpu_used: 9.99
+  cpu_processes: MyText
+  memory_processes: MyText
+
+two:
+  uid: MyString
+  name: MyString
+  so: MyString
+  ip: MyString
+  disk_used: 9.99
+  disk_used_percent: 9.99
+  memory_used: 9.99
+  memory_used_percent: 9.99
+  cpu_used: 9.99
+  cpu_processes: MyText
+  memory_processes: MyText
