@@ -35,6 +35,12 @@ gem 'figaro'
 #User Authentication
 gem 'devise'
 
+#User permisions
+gem 'cancancan'
+
+#User Roles
+gem 'rolify'
+
 #Models, Routes and Specs Documentation
 gem 'annotate'
 

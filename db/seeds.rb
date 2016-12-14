@@ -5,3 +5,6 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+user = User.create([{ email: 'admin@mail.com', name: 'Admin', password: '1234321' }])
+user.first.add_role :admin
